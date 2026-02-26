@@ -1,33 +1,99 @@
-import ArcGalleryHero from "@/components/ArcGalleryHero";
+import ArcGalleryHero, { type Mathematician } from "@/components/ArcGalleryHero";
+
+const mathematicians: Mathematician[] = [
+  {
+    name: "Гипатия Александрийская",
+    years: "~360 — 415 н.э.",
+    achievement:
+      "Первая известная женщина-математик. Комментировала труды Диофанта и Аполлония, преподавала философию и астрономию в Александрии. Была убита фанатичной толпой.",
+    historicalContext:
+      "Эпоха упадка Римской империи, религиозные конфликты между язычеством и христианством. Александрия переживала волну погромов.",
+    contextType: "political",
+    portrait: "/placeholder-user.jpg",
+    color: "#c9a227",
+  },
+  {
+    name: "Эмили дю Шатле",
+    years: "1706 — 1749",
+    achievement:
+      "Перевела «Начала» Ньютона на французский и написала блестящий математический комментарий. Первой обосновала понятие кинетической энергии.",
+    historicalContext:
+      "Война за австрийское наследство (1740–1748) опустошала Европу, пока она работала над переводом в своём замке.",
+    contextType: "war",
+    portrait: "/placeholder.jpg",
+    color: "#7c6fcd",
+  },
+  {
+    name: "Софья Ковалевская",
+    years: "1850 — 1891",
+    achievement:
+      "Первая женщина — профессор математики в Европе. Доказала теорему Коши–Ковалевской, получила премию Бордена за работу о вращении твёрдого тела.",
+    historicalContext:
+      "Русско-турецкая война (1877–1878). В России женщинам был закрыт доступ в университеты — Ковалевская заключила фиктивный брак, чтобы уехать учиться.",
+    contextType: "war",
+    portrait: "/placeholder-user.jpg",
+    color: "#e07b54",
+  },
+  {
+    name: "Эмми Нётер",
+    years: "1882 — 1935",
+    achievement:
+      "Создала современную абстрактную алгебру. Теорема Нётер — фундамент теоретической физики. Эйнштейн назвал её «самым значительным творческим математическим гением».",
+    historicalContext:
+      "Первая мировая война и приход нацистов к власти: в 1933 году её уволили из университета Гёттингена за еврейское происхождение. Эмигрировала в США.",
+    contextType: "war",
+    portrait: "/placeholder.jpg",
+    color: "#5ba4a4",
+  },
+  {
+    name: "Мэри Картрайт",
+    years: "1900 — 1998",
+    achievement:
+      "Пионер теории хаоса. Во время Второй мировой войны анализировала радиосигналы и обнаружила непредсказуемое поведение, ставшее основой хаотической динамики.",
+    historicalContext:
+      "Вторая мировая война (1939–1945). Её математические исследования велись параллельно с Блетчли-Парк — на пересечении науки и войны.",
+    contextType: "war",
+    portrait: "/placeholder-user.jpg",
+    color: "#4a9e6b",
+  },
+  {
+    name: "Кэтрин Джонсон",
+    years: "1918 — 2020",
+    achievement:
+      "Рассчитала траекторию первого американского орбитального полёта и лунной миссии Аполлон-11. Джон Гленн отказывался лететь без её проверки расчётов.",
+    historicalContext:
+      "Холодная война и космическая гонка. Джонсон работала в NASA как «человек-компьютер», преодолевая расовую сегрегацию в США.",
+    contextType: "discovery",
+    portrait: "/placeholder.jpg",
+    color: "#c9a227",
+  },
+  {
+    name: "Мариам Мирзахани",
+    years: "1977 — 2017",
+    achievement:
+      "Первая женщина, получившая медаль Филдса — высшую награду в математике (2014). Открыла новые горизонты в геометрии поверхностей и динамических системах.",
+    historicalContext:
+      "Выросла в Иране во время последствий Исламской революции, где доступ женщин к высшему образованию был ограничен. Добилась успеха вопреки системе.",
+    contextType: "political",
+    portrait: "/placeholder-user.jpg",
+    color: "#9b59b6",
+  },
+];
 
 const Index = () => {
-  const images = [
-    "/freepik__enhance__98192.png",
-    "/LS.png",
-    "/freepik__a-closeup-shot-features-a-glossy-purple-crossshape__48873.png",
-    "/freepik__the-style-is-3d-model-with-octane-render-volumetri__57555.png",
-    "/eqirGoRIJPaIMgEUeliWpNxeFmI.jpg",
-    "/ultra-detailed_close-up_side_profile_of_a_dark-skinned_model_wearing_futuristic_chrome_wraparound_s_ps17q5ms2ptu5t6bdru6_2.png",
-    "/slide.png",
-    "/freepik__abstract-digital-art-featuring-a-series-of-horizon__489.png",
-    "/abstract-blue-gradient.webp",
-    "/VkvvhXlWo3hEBzcqwTpjd_aa4bf9ee998f4ec0b17a8bf16fe3e9e2.jpg",
-    "/hyperrealistic_commercial_product_photography_of_luxury_chrome_sunglasses_on_male_model_extreme_chi_fanguv2w9zx489lcivwa_2.png",
-  ];
-
   return (
-    <main className="relative min-h-screen bg-background">
+    <main className="relative min-h-screen bg-[#0d0a1a]">
       <ArcGalleryHero
-        images={images}
+        mathematicians={mathematicians}
         startAngle={20}
         endAngle={160}
         radiusLg={480}
         radiusMd={360}
         radiusSm={260}
-        cardSizeLg={120}
-        cardSizeMd={100}
+        cardSizeLg={130}
+        cardSizeMd={105}
         cardSizeSm={80}
-        className="pt-16 pb-16 md:pt-20 md:pb-20 lg:pt-24 lg:pb-24"
+        className="pt-10 pb-16"
       />
     </main>
   );
