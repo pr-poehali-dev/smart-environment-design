@@ -82,7 +82,7 @@ const mathematicians: Mathematician[] = [
     historicalContext:
       "Выросла в Иране во время последствий Исламской революции, где доступ женщин к высшему образованию был ограничен. Добилась успеха вопреки системе.",
     contextType: "political",
-    portrait: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Maryam_Mirzakhani_%28cropped%29.jpg/440px-Maryam_Mirzakhani_%28cropped%29.jpg",
+    portrait: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Maryam_Mirzakhani_%28cropped%29.jpg/320px-Maryam_Mirzakhani_%28cropped%29.jpg",
     color: "#9b59b6",
   },
 ];
