@@ -222,7 +222,7 @@ const ArcGalleryHero = ({
         className="relative z-10 text-center pt-12 pb-4 px-6 opacity-0 animate-fade-in"
         style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}
       >
-        <p className="text-xs uppercase tracking-[0.3em] text-[#c9a227] mb-2 font-medium">История науки</p>
+        <p className="text-xs uppercase tracking-[0.3em] text-[#c9a227] mb-2 font-medium"></p>
         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
           Лента <span className="text-[#c9a227]">времени</span>
         </h1>
